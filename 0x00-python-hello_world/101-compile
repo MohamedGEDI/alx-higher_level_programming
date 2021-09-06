@@ -1,2 +1,2 @@
 #!/bin/bash
-python main.py >> main.pyc
+python -m compileall $PYFILE >> main.pyc
