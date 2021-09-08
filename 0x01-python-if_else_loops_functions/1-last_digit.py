@@ -20,3 +20,5 @@ elif number > 0:
         print("greater than 5")
     elif last < 6:
         print("less than 6 and not 0")
+elif number == 0:
+    print("Last digit of 0 is 0 and is 0")
