@@ -4,6 +4,6 @@ def new_in_list(my_list, idx, element):
     if idx < 0 or idx > n - 1:
         return my_list
     else:
-        replace = my_list
+        replace = my_list.copy()
         replace[idx] = element
         return replace
