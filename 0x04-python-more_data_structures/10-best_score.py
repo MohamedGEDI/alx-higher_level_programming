@@ -9,5 +9,5 @@ def best_score(a_dictionary):
                 temp = v
         key_list = list(a_dictionary.keys())
         val_list = list(a_dictionary.values())
-        posititon = val_list.index(temp)
+        position = val_list.index(temp)
         return key_list[position]
