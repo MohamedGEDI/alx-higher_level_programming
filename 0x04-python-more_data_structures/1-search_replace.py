@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-def search_replace(my_list=n):
+def search_replace(my_list, search, replace):
     if my_list == None:
         return None
     newlist = my_list.copy()
