@@ -1,0 +1,45 @@
+This module is to test 2-matrix_divided.py 
+
+first import the function
+
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+test with expected arguments 
+
+>>> matrix_divided([[1, 2, 3], [4, 5, 6]], 3) #doctest: +ELLIPSIS
+[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+
+test with div == 0
+
+>>> matrix_divided([[1, 2, 3], [4, 5, 6]], 0) #doctest: +ELLIPSIS
+Traceback (most recent call last):
+      ...
+ZeroDivisionError: division by zero
+
+test with normal list
+ 
+>>> matrix_divided([1, 2, 3], 3) #doctest: +ELLIPSIS
+Traceback (most recent call last):
+      ...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+test with non ints or floats 
+
+>>> matrix_divided([[1, 2, 3], [4, 5, 6]], '3') #doctest: +ELLIPSIS
+Traceback (most recent call last):
+      ...
+TypeError: div must be a number
+
+test with non ints/floats in matrix
+
+>>> matrix_divided([[1, 2, 3],[True, '4', 5]], 3) #doctest: +ELLIPSIS
+Traceback (most recent call last):
+      ...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+test with different size rows 
+
+>>> matrix_divided([[1, 2, 3], [4, 6]], 3) #doctest: +ELLIPSIS
+Traceback (most recent call last):
+      ...
+TypeError: Each row of the matrix must have the same size
