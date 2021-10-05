@@ -1,0 +1,29 @@
+0-add_integer testing module
+
+Using add_intege
+
+import add_integer
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+tesing with one argument
+
+>>> add_integer(2)
+100
+
+testing with 2 arguments
+
+>>> add_integer(1, 2)
+3
+
+testing with one int and a string
+
+>>> add_integer(2, "School")
+Traceback (most recent call)
+        ...
+TypeError: b must be an integer"
+
+test with floats 
+
+>>> add_integer(3.221, 4.21)
+7
