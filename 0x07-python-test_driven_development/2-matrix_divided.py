@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """2-matrix-divided.py docstring test"""
 def matrix_divided(matrix, div):
     """This function divided elements of a matrix by div
