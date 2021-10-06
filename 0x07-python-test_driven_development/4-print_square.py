@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """print #in square format """
 def print_square(size):
     if type(size) is not int:
