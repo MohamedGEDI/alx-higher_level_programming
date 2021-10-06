@@ -59,8 +59,14 @@ class Rectangle:
             return rect_1
         else:
             return rect_2
+
     @classmethod
     def square(cls, size=0):
+        if type(size) is not int:
+            raise TypeError("size must be an integer")
+        elif size < 0:
+            raise ValueError("size must be >= 0")
+        else:
         return cls(size, size)
 
     def __str__(self):
