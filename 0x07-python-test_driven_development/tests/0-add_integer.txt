@@ -18,9 +18,9 @@ testing with 2 arguments
 
 testing with one int and a string
 
->>> add_integer(2, "School")
-Traceback (most recent call)
-        ...
+>>> add_integer(2, "School") #doctest +ELLIPSIS
+Traceback (most recent call last):
+        ... 
 TypeError: b must be an integer"
 
 test with floats 

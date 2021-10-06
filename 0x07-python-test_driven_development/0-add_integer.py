@@ -1,7 +1,10 @@
+#!/usr/bin/python3
 """Simple addition function"""
+
+
 def add_integer(a, b=98):
     """THis fucntion takes one mandatory argument and one optional
-    arguments can be int or float, if float change to int 
+    arguments can be int or float, if float change to int
     args:
         a (union[int, flot]): first number
         b (union[int, flot]): second number
