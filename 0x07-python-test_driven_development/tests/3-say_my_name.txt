@@ -7,10 +7,6 @@ test with 2 strings arguments
 >>> say_my_name('Walter', 'White')
 My name is Walter White
 
-test with 1 string
->>> say_my_name('Batman')
-My name is Batman
-
 test with int for first_name
 >>> say_my_name(3, 'luck') #doctest +ELLIPSIS
 Traceback (most recent call last):
