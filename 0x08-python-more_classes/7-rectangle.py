@@ -51,7 +51,7 @@ class Rectangle:
         if self.__height == 0 or self.__width == 0:
             return ""
         else:
-            hashes = type(self).print_symbol * self.__width
+            hashes = "{}".format(self.print_symbol) * self.__width
             return '\n'.join(hashes for h in range(self.__height))
 
     def __repr__(self):
