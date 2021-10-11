@@ -1,0 +1,18 @@
+This is to test subclass MyList to print sorted ints
+
+import file
+>>> MyList = __import__('1-my_list').MyList
+
+import class
+>>> my_list = MyList([4, 1, 3])
+
+test with three numbers
+>>> my_list.print_sorted()
+[1, 3, 4]
+
+import class
+>>> my_list = MyList(['a', 'x', 's', 'q'])
+
+test with three letters
+>>> my_list.print_sorted()
+['a', 'q', 's', 'x']
