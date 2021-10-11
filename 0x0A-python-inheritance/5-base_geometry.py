@@ -3,4 +3,5 @@
 
 
 class BaseGeometry:
+    """empty base geo class"""
     pass
