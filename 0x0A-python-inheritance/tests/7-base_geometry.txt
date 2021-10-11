@@ -1,0 +1,36 @@
+test geometry base class
+
+import file 
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+test with right argument
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("my_int", 98)
+
+test with negative int
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("my_int", -98) #doctest +ELLIPSIS
+Traceback (most recent call last):
+        ...
+ValueError: my_int must be greater than 0
+
+test with string
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("my_int", "number") #doctest +ELLIPSIS
+Traceback (most recent call last):
+        ...
+TypeError: my_int must be an integer
+
+test with zero
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("my_int", 0) #doctest +ELLIPSIS
+Traceback (most recent call last):
+        ...
+ValueError: my_int must be greater than 0
+
+test with float
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("my_int", 3.14) #doctest +ELLIPSIS
+Traceback (most recent call last):
+        ...
+TypeError: my_int must be an integer
