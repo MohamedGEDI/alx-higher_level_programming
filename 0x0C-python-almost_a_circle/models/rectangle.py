@@ -64,3 +64,30 @@ class Rectangle(Base):
                 raise ValueError("y must be > 0")
             else:
                 self.__y = y
+
+        def update(self, *args, **kwargs):
+            i = 0
+            attributes = ['id', 'width', 'height', 'x', 'y']
+            if len(args) > 0:
+                for attr in attributes:
+                    if i > len(args) - 1:
+                        break
+                    setattr(self, attr, args[i])
+            else:
+                for key, value in kwargs.items():
+                    if key not in attributes:
+                        continue
+                    setattr(self, key, value)
+                        
+
+        def area(self):
+            return self.__width * self.__height
+
+        def display(self):
+            for i in range(self.__y):
+                print()
+            for i in range(self.__height):
+                print(" " * self.__x  + "#" * self.__width)
+
+        def __str__(self):
+            return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x, self.__y, self.__width, self.__height)
