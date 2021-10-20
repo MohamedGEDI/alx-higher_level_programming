@@ -77,5 +77,11 @@ class Rectangle(Base):
             self.__y = y
 
     def area(self):
-        """decorator getter property"""
+        """area of the rectangle"""
         return self.__height * self.__width
+
+    def display(self):
+        """display the rectangle as # """
+        for i in range(self.__height):
+            print("#" * self.__width)
+
