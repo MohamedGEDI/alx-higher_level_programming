@@ -18,10 +18,12 @@ class Rectangle(Base):
 
     @property
     def width(self):
+        """decorator getter property"""
         return self.__width
 
     @width.setter
     def width(self, width):
+        """decorator setter property"""
         if type(width) is not int:
             raise TypeError("width must be an integer")
         elif width <= 0:
@@ -31,10 +33,12 @@ class Rectangle(Base):
 
     @property
     def height(self):
+        """decorator getter property"""
         return self.__height
 
     @height.setter
     def height(self, height):
+        """decorator setter property"""
         if type(height) is not int:
             raise TypeError("height must be an integer")
         elif height <= 0:
@@ -44,10 +48,12 @@ class Rectangle(Base):
 
     @property
     def x(self):
+        """decorator getter property"""
         return self.__x
 
     @x.setter
     def x(self, x):
+        """decorator setter property"""
         if type(x) is not int:
             raise TypeError("x must be an integer")
         elif x < 0:
@@ -57,10 +63,12 @@ class Rectangle(Base):
 
     @property
     def y(self):
+        """decorator getter property"""
         return self.__y
 
     @y.setter
     def y(self, y):
+        """decorator setter property"""
         if type(y) is not int:
             raise TypeError("y must be an integer")
         elif y < 0:
@@ -69,4 +77,5 @@ class Rectangle(Base):
             self.__y = y
 
     def area(self):
+        """decorator getter property"""
         return self.__height * self.__width
