@@ -8,6 +8,9 @@ from .base import Base
 from .rectangle import Rectangle
 
 
+"""import other classes"""
+
+
 class Square(Rectangle, Base):
     """class square that imports Rectangle and Base"""
     def __init__(self, size, x=0, y=0, id=None):
@@ -26,5 +29,5 @@ class Square(Rectangle, Base):
         self.height = size
 
     def __str__(self):
-        "string representation of Square"
+        """string representation of Square"""
         return f"[Square] ({self.id}) {self.x}/{self.y} - {self.size}"
