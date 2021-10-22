@@ -46,14 +46,14 @@ class Square(Rectangle, Base):
 
     def to_dictionary(self):
         """transform to dictionary"""
-        rect = dict()
-        rect = {
+        square = dict()
+        square = {
             'x': self.__x,
             'y': self.__y,
             'id': self.id,
             'size': self.size
         }
-        return rect
+        return square
 
     def __str__(self):
         """string representation of Square"""
