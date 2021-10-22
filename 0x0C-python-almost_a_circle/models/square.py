@@ -28,6 +28,22 @@ class Square(Rectangle, Base):
         self.width = size
         self.height = size
 
+    def update(self, *args, **kwargs):
+        """Update setting attributes"""
+        i = 0
+        attributes = ['id', 'width', 'height', 'x', 'y']
+        if len(args) > 0:
+            for attr in attributes:
+                if i > len(args) - 1:
+                    break
+                setattr(self, attr, args[i])
+                i += 1
+        else:
+            for key, value in kwargs.items():
+                if key not in attributes:
+                    continue
+                setattr(self, key, value)
+
     def __str__(self):
         """string representation of Square"""
         return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y, self.size)
