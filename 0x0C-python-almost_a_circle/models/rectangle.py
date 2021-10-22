@@ -101,7 +101,19 @@ class Rectangle(Base):
         for i in range(self.__y):
             print()
         for i in range(self.__height):
-            print(" "* self.__x + "#" * self.__width)
+            print(" " * self.__x + "#" * self.__width)
+
+    def to_dictionary(self):
+        """transform to dictionary"""
+        rect = dict()
+        rect = {
+            'x': self.__x,
+            'y': self.__y,
+            'id': self.id,
+            'height': self.__height,
+            'width': self.__width
+        }
+        return rect
 
     def __str__(self):
         """string representation of Rectangle"""
