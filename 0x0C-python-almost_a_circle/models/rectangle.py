@@ -76,6 +76,22 @@ class Rectangle(Base):
         else:
             self.__y = y
 
+    def update(self, *args, **kwargs):
+        """Update setting attributes"""
+        i = 0
+        attributes = ['id', 'size', 'x', 'y']
+        if len(args) > 0:
+            for attr in attributes:
+                if i > len(args) - 1:
+                    break
+                setattr(self, attr, args[i])
+                i += 1
+        else:
+            for key, value in kwargs.items():
+                if key not in attributes:
+                    continue
+                setattr(self, key, value)
+
     def area(self):
         """area of the rectangle"""
         return self.__height * self.__width
