@@ -48,8 +48,8 @@ class Square(Rectangle, Base):
         """transform to dictionary"""
         square = dict()
         square = {
-            'x': self.__x,
-            'y': self.__y,
+            'x': self.x,
+            'y': self.y,
             'id': self.id,
             'size': self.size
         }
