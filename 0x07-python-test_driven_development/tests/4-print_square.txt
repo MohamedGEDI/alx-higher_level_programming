@@ -1,0 +1,27 @@
+This module is to test function print_square
+
+import function 
+>>> print_square = __import__('4-print_square').print_square
+
+test with an int 
+>>> print_square(2)
+##
+##
+
+test with float
+>>> print_square(2.00) #doctest +ELLIPSIS
+Traceback (most recent call last):
+       ...
+TypeError: size must be an integer
+
+test with negative numbers 
+>>> print_square(-2) #doctest +ELLIPSIS
+Traceback (most recent call last):
+       ...
+TypeError: size must be >= 0
+
+test with string
+>>> print_square('size') #doctest +ELLIPSIS
+Traceback (most recent call last):
+       ...
+TypeError: size must be an integer

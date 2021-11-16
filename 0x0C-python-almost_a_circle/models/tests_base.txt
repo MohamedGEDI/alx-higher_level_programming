@@ -1,0 +1,5 @@
+test module
+>>> Base = __import__('base').Base
+
+>>> b4 = Base(12)
+12

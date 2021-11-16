@@ -1,1 +1,6 @@
+<<<<<<< HEAD
 #!
+=======
+#!/bin/bash
+python $PYFILE
+>>>>>>> 089482ddefe3cbb591f1b68fb6e26707a32f8e5b
