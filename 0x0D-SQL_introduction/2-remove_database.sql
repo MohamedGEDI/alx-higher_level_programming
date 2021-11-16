@@ -1,2 +1,3 @@
 -- delete/drop a database
-DROP DATABASE hbtn_0c_0
+-- hbtn_0c_0 to be dropped
+DROP DATABASE IF EXISTS hbtn_0c_0
