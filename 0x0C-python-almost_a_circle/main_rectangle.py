@@ -3,11 +3,5 @@ from models.base import Base
 from models.rectangle import Rectangle
 
 if __name__ == "__main__":
-    ri = Rectangle(10, 2)
-    print(ri.id)
-
-    r2 = Rectangle(2, 10)
-    print(r2.id)
-
-    r3 = Rectangle(10, 2, 0, 0, 12)
-    print(r3.id)
+    r1 = Rectangle(4, 6, 2, 1, 12)
+    print(r1)
