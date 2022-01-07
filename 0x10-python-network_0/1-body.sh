@@ -1,4 +1,3 @@
-#!/usr/bin/env bash 
+#!/bin/bash 
 #Get request
-url=$1
-curl -X GET $url -L
+curl -X GET $1 -L
