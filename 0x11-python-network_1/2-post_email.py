@@ -15,3 +15,4 @@ if __name__ == "__main__":
     with urllib.request.urlopen(sys.argv[1] + '?' + query) as responce:
         head = responce.read().decode("utf-8")
         print(head)
+
