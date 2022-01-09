@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 
 
-""" Show body of url"""
+""" catch errors of url
+    Parameters: url to be fetched
+    Return: error  code
+"""
 
 
 import urllib.request
