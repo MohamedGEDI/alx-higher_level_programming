@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 
-""" catch errors of url
+__doc__ = """ catch errors of url
     Parameters: url to be fetched
     Return: error  code
 """
