@@ -13,5 +13,4 @@ if __name__ == "__main__":
         print('''
 Body response:
     - type: {}
-    - content: {}
-    - utf8 content: 0K'''.format(type(html), html))
+    - content: {}'''.format(type(html), html))
