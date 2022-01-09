@@ -1,7 +1,13 @@
 #!/usr/bin/python3
 
 
-"""add email param to url"""
+"""add email param to url
+   
+   Parameters:
+               url (string): url to be fetched
+               second (string): email to be searched
+   Returns:
+               string: email requested"""
 
 
 import urllib.request
@@ -17,3 +23,4 @@ if __name__ == "__main__":
     with urllib.request.urlopen(url) as responce:
         head = responce.read().decode("utf-8")
         print(head)
+
