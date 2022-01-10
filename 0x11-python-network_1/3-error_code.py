@@ -1,10 +1,7 @@
 #!/usr/bin/python3
 
 
-__doc__ = """ catch errors of url
-    Parameters: url to be fetched
-    Return: error  code
-"""
+""" catch errors of url"""
 
 
 import urllib.request
@@ -13,7 +10,7 @@ import sys
 
 if __name__ == "__main__":
     """Try except block to catch errors"""
-    try:  
+    try:
         with urllib.request.urlopen(sys.argv[1]) as response:
             html = response.read().decode('utf-8')
             print(html)

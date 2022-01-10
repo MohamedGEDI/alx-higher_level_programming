@@ -11,7 +11,7 @@
 
 
 import urllib.request
-import urllib.parse
+from urllib import parse
 import sys
 
 
