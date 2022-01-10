@@ -17,12 +17,10 @@ if __name__ == "__main__":
     params = {
         'per_page': 10,
     }
-    response = requests.get(f'https://api.github.com/repos/{user}/{repo}/'
-                            f'commits', headers=headers, params=params)
+    response = requests.get(f'https://api.github.com/repos/{user}/{repo}/commits', headers=headers, params=params)
     if response.status_code == 200:
         r_dict = response.json()
-        for i in range(1, 10):
-            print("{}: {}".format(r_dict[i]['sha'],
-                                  r_dict['commit']['author']['name']))
+
+        print("{}: {}".format(r_dict[i]['sha'], r_dict['commit']['author']['name']))
     else:
         print("None")
