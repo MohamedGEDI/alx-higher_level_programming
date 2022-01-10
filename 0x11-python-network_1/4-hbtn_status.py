@@ -9,7 +9,7 @@ import requests
 
 if __name__ == "__main__":
     responce = requests.get('https://intranet.hbtn.io/status')
-    html = response.content.decode('utf-8')
+    html = responce.content.decode('utf-8')
     print('''
 Body response:
     - type: {}
