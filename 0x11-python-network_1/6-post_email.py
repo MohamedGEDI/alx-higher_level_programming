@@ -4,14 +4,10 @@
 """add email param to url"""
 
 
-import requests
-import sys
+if __name__ == '__main__':
+    import requests
+    import sys
 
-
-if __name__ == "__main__":
-    url = sys.argv[1]
-    email = sys.argv[2]
-    params = {'email': email}
-    responce = requests.post(url, params=params)
-    head = responce.text
-    print(head)
+    params = {'email': sys.argv[2]}
+    res = requests.post(sys.argv[1], data=params)
+    print(res.text)
