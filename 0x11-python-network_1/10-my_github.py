@@ -11,9 +11,9 @@ import sys
 if __name__ == "__main__":
     username = sys.argv[1]
     password = sys.argv[2]
-    with requests.get('https://api.github.com/user', auth=(username, password)) as response:
-        if response.status_code == 200:
-            r_dict = response.json()
-            print(r_dict['id'])
-        else:
-            print("None")
+    responce = requests.get('https://api.github.com/user', auth=(username, password))
+    if responce.status_code == 200:
+        r_dict = responce.json()
+        print(r_dict['id'])
+    else:
+        print("None")
