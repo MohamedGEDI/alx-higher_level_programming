@@ -9,7 +9,9 @@ import sys
 
 
 if __name__ == "__main__":
-    params = {'email': sys.argv[2]}
-    responce = requests.post(sys.argv[1], params=params)
+    url = sys.argv[1]
+    email = sys.argv[2]
+    params = {'email': email}
+    responce = requests.post(url, params=params)
     head = responce.text
     print(head)
