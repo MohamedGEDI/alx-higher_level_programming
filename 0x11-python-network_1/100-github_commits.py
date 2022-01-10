@@ -2,7 +2,7 @@
 
 
 """Use github PAT to get id"""
-import json
+
 
 import requests
 import sys
