@@ -4,12 +4,10 @@
 """ Show body of url using requests"""
 
 
-import requests
-
-
 if __name__ == "__main__":
+    import requests
     responce = requests.get('https://intranet.hbtn.io/status')
-    html = responce.content.decode('utf-8')
+    html = responce.text
     print('''
 Body response:
     - type: {}
