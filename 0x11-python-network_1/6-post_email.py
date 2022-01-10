@@ -10,6 +10,6 @@ import sys
 
 if __name__ == "__main__":
     params = {"email": sys.argv[2]}
-    with requests.post(sys.argv[1], params=params) as responce:
-        head = responce.content.decode("utf-8")
-        print(head)
+    responce = requests.post(sys.argv[1], params=params)
+    head = responce.content.decode("utf-8")
+    print(head)
