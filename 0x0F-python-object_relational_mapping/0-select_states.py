@@ -8,7 +8,6 @@ if __name__ == "__main__":
     query_row = cur.fetchall()
     i = 0
     for state in query_row:
-        i += 1
-        print("({}, '{}')".format(i, state))
+        print(state)
     cur.close()
     conn.close()
